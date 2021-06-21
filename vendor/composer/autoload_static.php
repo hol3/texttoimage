@@ -65,9 +65,9 @@ class ComposerStaticInite4071f375d719e2911431e967ed0a58f
     );
 
     public static $prefixesPsr0 = array (
-        'A' => 
+        'T' => 
         array (
-            'App' => 
+            'TextToImage' => 
             array (
                 0 => __DIR__ . '/../..' . '/src',
             ),
