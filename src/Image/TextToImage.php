@@ -15,12 +15,7 @@ class TextToImage
      * @param int font size of text
      * @param int width of the image
      * @param int height of the image
-     */
-
-    public function PrintHelloWorld()
-    {
-        return "Hello World";
-    }
+     */ 
 
     public function createImage($text, $textColor, $backgroundColor, $fontSize = 22, $imgWidth = 600, $imgHeight = 300) {
         //text font path
