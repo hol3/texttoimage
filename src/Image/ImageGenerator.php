@@ -1,8 +1,8 @@
 <?php
 
-namespace Image;
+namespace TextToImage\Image;
 
-class TextToImage
+class ImageGenerator
 {
 
     private $image;

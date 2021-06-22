@@ -7,8 +7,8 @@
         "php": ">=7.0"
     },
     "autoload": {
-        "psr-0": {
-            "TextToImage": "src/"
+        "psr-4": {
+            "TextToImage\\": "src/"
         }
     },
     "require-dev": {
