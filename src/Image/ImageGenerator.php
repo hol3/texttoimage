@@ -54,7 +54,7 @@ class ImageGenerator
             $y = ((imagesy($this->image) + $textHeight) / 2) - ($lines - 2) * $textHeight;
             $lines = $lines - 1;
             //add the text
-            imagettftext($this->image, $fontSize, $angle, $x, $y, $textColor, $font, $txt);
+            imagettftext($this->image, $fontSize, $angle, $x, $y, $textColor, $fontType, $txt);
         }
         return true;
     }

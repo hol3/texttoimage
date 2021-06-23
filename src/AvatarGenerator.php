@@ -7,12 +7,12 @@ use TextToImage\Image\ImageGenerator;
 class AvatarGenerator
 {    
 
-    public function create($text, $size = 78)
+    public function create($text, $fontType, $size = 78)
     {
         $letters = $this->getLetters($text);
         $avatar = new ImageGenerator();
         //createImage function use parameters: text, text background, background, text size, and image size
-        if($avatar->createImage($letters, '#ffffff', '', 22, $size, $size))
+        if($avatar->createImage($letters, '#ffffff', '', $fontType, 22, $size, $size))
             $image = $avatar->showImage();
         return $image;
     }
