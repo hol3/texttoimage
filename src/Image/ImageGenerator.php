@@ -19,7 +19,7 @@ class ImageGenerator
 
     public function createImage($text, $textColor, $backgroundColor, $fontSize = 22, $imgWidth = 600, $imgHeight = 300) {
         //text font path
-        $font = 'font/Pacifico-Regular.ttf';
+        $font = 'https://fonts.googleapis.com/css2?family=Staatliches&display=swap';
         //create the image
         $this->image = imagecreatetruecolor($imgWidth, $imgHeight);
         $colorCode = array('#ffffff','#db3236', '#f4c20d', '#3cba54', '#4c53cc', '#56aad8', '#61c4a8');
