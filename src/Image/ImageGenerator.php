@@ -37,7 +37,7 @@ class ImageGenerator
             $textColor = $this->hexToRGB($colorCode[rand(0, count($colorCode) - 1)]);
         } else {
             /* select background color as provided */
-            $textColor = $this->hexToRGB($colorCode[rand(0, count($textColor) - 1)]);
+            $textColor = $this->hexToRGB($textColor);
         }
         $textColor = imagecolorallocate($this->image, $textColor['r'], $textColor['g'], $textColor['b']);
         $backgroundColor = imagecolorallocate($this->image, $backgroundColor['r'], $backgroundColor['g'], $backgroundColor['b']);
