@@ -17,9 +17,9 @@ class ImageGenerator
      * @param int height of the image
      */ 
 
-    public function createImage($text, $textColor, $backgroundColor, $fontSize = 22, $imgWidth = 600, $imgHeight = 300) {
+    public function createImage($text, $textColor, $backgroundColor, $fontType, $fontSize = 22, $imgWidth = 600, $imgHeight = 300) {
         //text font path
-        $font = 'https://fonts.googleapis.com/css2?family=Staatliches&display=swap';
+        //$font = 'https://fonts.googleapis.com/css2?family=Staatliches&display=swap';
         //create the image
         $this->image = imagecreatetruecolor($imgWidth, $imgHeight);
         $colorCode = array('#ffffff','#db3236', '#f4c20d', '#3cba54', '#4c53cc', '#56aad8', '#61c4a8');
@@ -47,7 +47,7 @@ class ImageGenerator
         $lines = count($splitText);
         $angle = 0;
         foreach ($splitText as $txt) {
-            $textBox = imagettfbbox($fontSize, $angle, $font, $txt);
+            $textBox = imagettfbbox($fontSize, $angle, $fontType, $txt);
             $textWidth = abs(max($textBox[2], $textBox[4]));
             $textHeight = abs(max($textBox[5], $textBox[7]));
             $x = (imagesx($this->image) - $textWidth) / 2;
